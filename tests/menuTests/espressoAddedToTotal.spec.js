@@ -9,6 +9,6 @@ test('Check Espresso cost is added to Total on menu page', async ({
   await menuPage.clickEspressoCup();
 
   await menuPage.assertTotalCheckoutContainsValue(
-    totalPriceFormatStr(coffeePrices.espresso, 1),
+    totalPriceFormatStr(coffeePrices.espresso),
   );
 });
