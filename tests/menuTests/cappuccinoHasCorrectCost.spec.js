@@ -6,5 +6,5 @@ test('Check Cappuccino cup has correct cost', async ({ menuPage }) => {
   await menuPage.open();
 
   await menuPage.assertCappuccinoCupCostHasValue(
-    priceFormatStr(coffeePrices.cappuccino, 1));
+    priceFormatStr(coffeePrices.cappuccino));
 });

@@ -17,5 +17,5 @@ test('Check Espresso correctly added to the Cart', async ({
   await cartPage.assertEspressoUnitContainsCorrectText(
     unitPriceFormatStr(coffeePrices.espresso, 1));
   await cartPage.assertEspressoTotalCostContainsCorrectText(
-    priceFormatStr(coffeePrices.espresso, 1));
+    priceFormatStr(coffeePrices.espresso));
 });
